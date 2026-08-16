@@ -18,7 +18,7 @@ Celem projektu było zbadanie dostępności pieszej do placówek oświatowych w 
 5. Analiza izochron zasięgu 3000 m od szkół.
 6. Wyznaczenie stref wykluczenia oraz opracowanie kompozycji kartograficznej z wycinkami analitycznymi (Inset Maps).
 
-![Mapa optymalnej sieci szkół](Analiza dostępności przestrzennej szkół w Gminie i Mieście Chojnice.png)
+![Mapa optymalnej sieci szkół](<Analiza dostępności przestrzennej szkół w Gminie i Mieście Chojnice.png>)
 ---
 *Autor: Jakub Knitter*  
 *Data: 2026*
