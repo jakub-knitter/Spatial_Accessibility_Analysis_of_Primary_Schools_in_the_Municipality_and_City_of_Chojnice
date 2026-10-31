@@ -1,22 +1,25 @@
-# Analiza dostępności przestrzennej szkół podstawowych w Gminie i Mieście Chojnice
+# Spatial Accessibility Analysis of Primary Schools in the Municipality and City of Chojnice
 
-## O projekcie
-Celem projektu było zbadanie dostępności pieszej do placówek oświatowych w Gminie i Mieście Chojnice oraz identyfikacja obszarów wykluczenia transportowego (> 3000 m od najbliższej szkoły).
+## About the Project
+The goal of this project was to analyze pedestrian accessibility to primary educational institutions across the Municipality and City of Chojnice, as well as to identify areas of spatial exclusion (> 3,000 meters from the nearest school)
 
-## Narzędzia i Metodologia
-* **Oprogramowanie:** QGIS 3.40.12
-* **Analizy sieciowe:**
-  * `ORS Tools` – wyznaczenie izochron dojścia (3 km) wzdłuż sieci drogowej.
-  * `QNEAT3` – kalkulacja macierzy kosztów (OD Matrix) z centroidów budynków do placówek szkolnych po sieci OSM.
-* **Źródła danych:** OpenStreetMap, BDOT10k, PRG, QuickOSM.
+## Tools & Methodology
+- **Software:** QGIS 3.40.12
+- **Network Analysis:**
+  * `ORS Tools` - calculation of 3 km walking isochrones along the road network.
+  * `QNEAT3` - matrix cost calculation (OD Matrix) from residential building centroids to school facilities using the OpenStreetMap (OSM) network.
+- **Data Sources:** OpenStreetMap, BDOT10k, PRG (Polish National Register of Boundaries), QuickOSM.
 
-## Wykonane kroki
-1. Zebranie danych informacji publicznej Gminy i Miasta Chojnice
-2. Pobranie mapy podkładowej z OpenStreetMap i QuickOSM
-3. Wygenerowanie centroidów dla geometrii budynków mieszkalnych.
-4. Przypisanie budynków do najbliższych szkół na podstawie najkrótszego dystansu drogowego (`total_cost`).
-5. Analiza izochron zasięgu 3000 m od szkół.
-6. Wyznaczenie stref wykluczenia oraz opracowanie kompozycji kartograficznej z wycinkami analitycznymi (Inset Maps).
+## Workflow & Steps Taken
+1.Gathering public domain data for the Municipality and City of Chojnice.
+2.Loading the basemap and spatial layers via OpenStreetMap and QuickOSM.
+3.Generating centroids for residential building geometries.
+4.Generating an OD Matrix layer via the QNEAT3 plugin from residential centroids to school facilities along the OSM network.
+5.Joining the resulting network analysis layer back to the residential building dataset.
+6.Assigning residential buildings to the nearest schools based on shortest road distance (total_cost).
+7.Calculating 3,000-meter reachability isochrones from schools.
+8.Identifying spatial exclusion zones and composing the final map layout with analytical inset maps.
+
 
 ![Mapa optymalnej sieci szkół](<Analiza dostępności przestrzennej szkół w Gminie i Mieście Chojnice.png>)
 ---
