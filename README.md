@@ -21,7 +21,7 @@ The goal of this project was to analyze pedestrian accessibility to primary educ
 8. Identifying spatial exclusion zones and composing the final map layout with analytical inset maps.
 
 
-![Optimal School Network Map](<Spatial Accessibility Analysis of Schools in the Municipality and City of Chojnice.png>)
+![Optimal School Network Map](<img/Spatial Accessibility Analysis of Schools in the Municipality and City of Chojnice.png>)
 ---
-*Autor: Jakub Knitter*  
-*Data: 2026*
+*Author: Jakub Knitter*  
+*Date: 10.2026*
